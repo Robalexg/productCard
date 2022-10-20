@@ -1,0 +1,92 @@
+.card--container{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 40%;
+}
+
+.card--imgContainer{
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+
+.card--img{
+    width: 100%;
+    border-radius: 1em 0 0 1em;
+    
+}
+
+.card--textContainer{
+    flex: 1;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 1em 1em 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding: 2em;
+
+}
+
+.card--type{
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .5em;
+    font-size: .8em;
+    margin-top: 2em;
+}
+
+.card--title{
+    font-family: 'Fraunces', serif;
+    margin-top: .5em;
+    width: 80%;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.card--desc{
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-top: 1.5em;
+    font-size: .9em;
+    width: 90%;
+}   
+
+.card--price{
+    margin-top: 1em;
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: 700;
+    color:hsl(158, 36%, 37%);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.card--button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 1em;
+    border-radius: .5em;
+    width: 90%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 1em;
+    justify-content: center;
+    margin-top: 1em;
+
+}
+
+
+
+@media (max-width:1025px) {
+    .card--container{
+        display: flex;
+        flex-flow: column nowrap;
+        width: 40%;
+    }
+}
