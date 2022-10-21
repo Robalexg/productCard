@@ -1,21 +1,22 @@
 .card--container{
     display: flex;
     flex-flow: row nowrap;
-    width: 40%;
+    width: 40em;
 }
 
 .card--imgContainer{
     flex: 1;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 
 .card--img{
     width: 100%;
-    border-radius: 1em 0 0 1em;
-    
+    border-radius: 1em 0 0 1em;  
+    height: auto;
 }
 
 .card--textContainer{
@@ -25,7 +26,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    padding: 2em;
+    padding: 0  2em 2em 2em;
 
 }
 
@@ -62,7 +63,9 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    column-gap: 1em;
+    justify-content: space-between;
+
+    width: 100%;
 }
 
 .card--button{
@@ -78,7 +81,18 @@
     column-gap: 1em;
     justify-content: center;
     margin-top: 1em;
+    justify-self: flex-end;
+    cursor: pointer;
 
+}
+
+.card--button:hover{
+    background-color: hsl(158, 36%, 27%);
+
+}
+
+.card--imgMobile{
+    display: none;
 }
 
 
@@ -87,6 +101,22 @@
     .card--container{
         display: flex;
         flex-flow: column nowrap;
-        width: 40%;
+        width: 30em;
+    }
+
+    .card--img{
+        display: none;  
+    }
+
+    .card--imgMobile{
+        display: block;
+        width: 100%;
+        border-radius: 1em 1em 0 0;  
+        height: auto;
+    }
+
+    .card--textContainer{
+    border-radius: 0 0 1em 1em;
+
     }
 }

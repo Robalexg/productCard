@@ -5,6 +5,8 @@ const Card = () => {
         <section className="card--container">
             <div className='card--imgContainer' >
                 <img className='card--img' src="../images/image-product-desktop.jpg" alt="" />
+                <img className='card--imgMobile' src="../images/image-product-mobile.jpg" alt="" />
+
             </div>
             <div className='card--textContainer'>
                 <h2 className='card--type' >PERFUME</h2>
